@@ -2,8 +2,8 @@ Disk Arm Scheduling Simulation
 Assignment 3
 
 Team Members:
-Kai Long
-Partner Name
+Kai Long, cssc3175
+Nadir Albandar, cssc3104
 
 Class Accounts for Grading:
 cssc3175
