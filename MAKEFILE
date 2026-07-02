@@ -1,0 +1,57 @@
+Disk Arm Scheduling Simulation
+Assignment 3
+
+Team Members:
+Kai Long
+Partner Name
+
+Class Accounts for Grading:
+cssc3175
+
+Files Included:
+simarm.c
+Makefile
+README
+
+Program Description:
+This program simulates three disk arm scheduling algorithms:
+
+1. FCFS - First Come, First Served
+2. SSTF - Shortest Seek Time First
+3. SCAN - Elevator algorithm
+
+The program generates a random sequence of cylinder numbers from 0 to 999.
+The user provides the length of the sequence as a command-line argument.
+The program then calculates and prints the total distance traveled by the disk
+arm for each scheduling algorithm.
+
+SCAN Assumption:
+The SCAN algorithm moves upward first toward larger cylinder numbers. If there
+are requests below the starting position, the arm continues to cylinder 999,
+then reverses direction and services the lower requests.
+
+Compilation:
+Run the following command inside the a3 directory:
+
+make
+
+This creates the executable named:
+
+simarm
+
+Execution:
+Run the program with one positive integer argument:
+
+./simarm 64
+
+Example:
+./simarm 64
+
+Cleaning:
+To remove object files and the executable, run:
+
+make clean
+
+Notes:
+The program does not use the system() function.
+The program is written in C and compiles cleanly with gcc.
